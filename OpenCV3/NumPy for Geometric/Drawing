@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jul 21 12:24:50 2018
+
+@author: karigor
+"""
+
+import cv2
+import numpy as np
+
+def main():
+    img = np.zeros((512,512,3), np.uint8)
+    # balck screen
+    
+    cv2.line(img, (0, 99), (99, 0), (255, 0, 0), 1)
+    #               x cordinates y,  color,    thickness
+    
+    cv2.rectangle(img, (40, 100), (99, 0), (255, 0, 0), 5)
+    
+    cv2.circle(img, (140, 140), 99, (0, 100, 255), -1)
+    #           centre,  radius, if thickness is minus then it full fill 
+    
+    cv2.ellipse(img, (150, 250), (50, 20), 0, 0, 360, (127, 127, 127), -1)
+    
+    text1 = "karigorHERE"
+    #cv2.putText(img, text1,(200,250),cv2.FONT_HERSHEY_SIMPLEX, 6, (255, 255, 0 )
+    
+    
+    
+    cv2.imshow('karigor', img)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
+    
+    
+if __name__ == "__main__":
+    main()
