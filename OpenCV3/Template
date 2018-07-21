@@ -1,0 +1,16 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jul 21 12:24:50 2018
+
+@author: karigor
+"""
+
+import cv2
+import numpy as np
+
+def main():
+    print("OpenCV")
+    
+    
+if __name__ == "__main__":
+    main()
