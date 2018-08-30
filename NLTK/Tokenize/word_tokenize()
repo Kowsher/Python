@@ -1,0 +1,7 @@
+from nltk.tokenize import word_tokenize
+array = word_tokenize("this is karigor who is hakcing your pc")
+
+print(array)
+print(array[0])
+print(array[3])
+
