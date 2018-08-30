@@ -1,0 +1,19 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug 30 09:22:04 2018
+
+@author: karigor
+"""
+
+from nltk.tokenize import word_tokenize
+from nltk.tokenize import TreebankWordTokenizer
+from nltk.tokenize import WordPunctTokenizer
+
+tok2 = TreebankWordTokenizer()
+tok3 = WordPunctTokenizer()
+
+sentex = "Hey this is karigor. i like nltk"
+
+word_tokenize(sentex)
+tok2.tokenize(sentex)
+tok3.tokenize(sentex)
