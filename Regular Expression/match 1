@@ -10,3 +10,7 @@ import re
 sntx = "My name is karigor"
 
 re.match(r".*", sntx) # .* means any crachter & match for matching 
+
+sntx = ""
+re.match(r".*", sntx) # 0 or more character 
+
