@@ -1,0 +1,6 @@
+import nltk.data
+tokenizer = nltk.data.load('tokenizers/punkt/english.pickle')
+prag = "My name is karigor. i like python. i like nltk,"
+tokenizer.tokenize(prag)
+array = tokenizer.tokenize(prag)
+array[2]
