@@ -1,0 +1,7 @@
+prag = "My name is karigor. i like python. i like nltk,"
+from nltk.tokenize import sent_tokenize
+sent_tokenize(prag)
+arry = sent_tokenize(prag)
+print(arry)
+print(arry[0])
+print(arry[1])
