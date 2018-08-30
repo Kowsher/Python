@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug 30 09:22:04 2018
+
+@author: karigor
+"""
+
+import re
+
+sntx = "My name is karigor"
+
+re.match(r".*", sntx) # .* means any crachter & match for matching 
