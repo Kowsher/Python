@@ -1,0 +1,18 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Aug 30 09:22:04 2018
+
+@author: karigor
+"""
+
+import re
+
+sntx = "My name is karigor"
+
+re.match(r"[a-zA-Z]+", sntx) #after getting space it will break
+
+re.match(r"[a-zA-Z' ']+", sntx) #taking spacee too
+
+re.match(r"My", sntx) #only 'My' matched
+
+re.match(r"Mya", sntx) #not matched
