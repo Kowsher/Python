@@ -12,3 +12,5 @@ sntx = "1196 when i was born"
 re.match(r"[a-zA-Z]+", sntx) #not matched cause of being first char number
 
 re.search(r"[a-zA-Z]+", sntx) #search for char so return 'when'
+
+re.search(r"born$", sntx) # here seraching for 'born' word '$' means end of born
