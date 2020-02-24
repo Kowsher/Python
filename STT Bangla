@@ -18,10 +18,11 @@ def STT_Bangla():
         audio = r.listen(source)   
     
     try:
-        print("You said: " + r.recognize_google(audio, language = 'bn'))
+         string = r.recognize_google(audio, language = 'bn')
     except sr.UnknownValueError:
-        print("Could not understand audio")
+         string = "Could not understand audio"
     except sr.RequestError as e:
-        print("Could not request results; {0}".format(e))
+         string = "Could not request results; {0}".format(e)
+    return string
 
-STT_Bangla()
+string =  STT_Bangla()
