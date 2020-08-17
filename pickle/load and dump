@@ -1,0 +1,5 @@
+with open('units_chunk1.pickle', 'wb') as handle:
+    pickle.dump(words_chunk, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
+with open('units_chunk1.pickle', 'rb') as handle:
+    b = pickle.load(handle)
