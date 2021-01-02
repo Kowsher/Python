@@ -1,0 +1,7 @@
+
+
+
+url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/republic_clean.txt"
+text = requests.get(url).content.decode('utf8')
+with io.open('language-never-random.txt', 'w', encoding='utf8') as fout:
+    fout.write(text)
